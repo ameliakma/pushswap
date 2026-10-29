@@ -6,7 +6,7 @@
 /*   By: akhalfou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/24 21:54:43 by akhalfou          #+#    #+#             */
-/*   Updated: 2026/03/28 21:13:15 by akhalfou         ###   ########.fr       */
+/*   Updated: 2026/04/16 21:01:21 by akhalfou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	count_max_bits(int size)
 	int	bits;
 
 	bits = 0;
+// Tant que 2 à la puissance 'bits' est inférieur à la taille de la pile
 	while ((1 << bits) < size)
 		bits++;
 	return (bits);
